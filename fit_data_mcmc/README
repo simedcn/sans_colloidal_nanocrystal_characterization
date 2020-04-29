@@ -1,15 +1,15 @@
 This folder contains the code used to fit small-angle neutron scattering (SANS) data of dilute suspensions of colloidal PbS nanocrystals.
 
 The files included are:
-  fit_data_mcmc.m - 
-  define_model.m - 
-  int_lin_profile.m - 
-  plot_MCMC_output.m - 
-  gwmcmc.m - 
-  GaussHermite.m - 
-  makelogprior.m - 
-  get_restart_walkers.m - 
-  calc_atomic_ratios.m - 
-  parameter_statistics.m - 
-  cornerplot.m - 
-  sans_data.mat
+  fit_data_mcmc.m - Main MATLAB script run to fit the data and process the output.
+  define_model.m - Function which contains the model definition.
+  int_lin_profile.m - Function to integrate a linear profile in spherical coordinates.
+  plot_MCMC_output.m - Function which plots the output of the data fitting.
+  gwmcmc.m - Markov chain Monte Carlo script from Aslak Grinsted https://github.com/grinsted/gwmcmc
+  GaussHermite.m - Function to return the nodes and weights for implementing instrument smearing via Gauss Hermite quadrature.
+  makelogprior.m - Function to return the log-prior function including lower/upper bounds and any constraints.
+  get_restart_walkers.m - Function to take a subset of the parameters from the initial MCMC run for initializing the production run.
+  calc_atomic_ratios.m - Function which takes the fit volume fraction profiles and translates that to experimental measureables.
+  parameter_statistics.m - Function to compute statistics on the fit parameters.
+  cornerplot.m - Function to plot the corner plot showing marginal and pairwise distributions for the fit parameters.
+  sans_data.mat - SANS data formatted for input to the fit_data_mcmc script.
