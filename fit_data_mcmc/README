@@ -1,0 +1,15 @@
+This folder contains the code used to fit small-angle neutron scattering (SANS) data of dilute suspensions of colloidal PbS nanocrystals.
+
+The files included are:
+  fit_data_mcmc.m - 
+  define_model.m - 
+  int_lin_profile.m - 
+  plot_MCMC_output.m - 
+  gwmcmc.m - 
+  GaussHermite.m - 
+  makelogprior.m - 
+  get_restart_walkers.m - 
+  calc_atomic_ratios.m - 
+  parameter_statistics.m - 
+  cornerplot.m - 
+  sans_data.mat
